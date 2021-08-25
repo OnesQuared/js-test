@@ -2,7 +2,7 @@ export function getFizzBuzzUntil(n) {
   
   var fizzybuzzy = []
 
-  for(let i = 1; i <= n; i++) {
+  for(var i = 1; i <= n; i++) {
 
     if (i % 15 == 0) 
       fizzybuzzy[i - 1] = 'FizzBuzz'

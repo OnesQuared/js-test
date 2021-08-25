@@ -11,7 +11,9 @@ export default function(center, radius) {
       return radius ** 2 * Math.PI;
     },
     includes(Point) {
-      // TODO: write your code here
+
+      let distance = Math.sqrt(Math.pow((Point.x - center.x), 2) + Math.pow((Point.y - center.y), 2));
+      return distance <= radius;
     }
   }
 }

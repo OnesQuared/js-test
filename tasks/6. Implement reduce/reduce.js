@@ -1,3 +1,8 @@
 export function Reduce(array, reducer, initialValue) {
-  // TODO: write your code here
+
+  for (var i of array) {
+    initialValue = reducer(initialValue, i);
+  }
+  
+  return initialValue;
 }

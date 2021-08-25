@@ -5,20 +5,20 @@ export function areParenthesesBalanced(inputString) {
       '(': ')',
   }
 
-  for (let i = 0; i < inputString.length; i++) {
+  for (var i = 0; i < inputString.length; i++) {
 
       if (inputString[i] === '(') {
         dummy.push(inputString[i]);
       }
       else {
 
-          let last = dummy.pop();
+          var last = dummy.pop();
 
           if (inputString[i] !== map[last]) {return false};
       }
   }
 
-      if (dummy.length !== 0) {return false};
+  if (dummy.length !== 0) {return false};
 
   return true;
 }
